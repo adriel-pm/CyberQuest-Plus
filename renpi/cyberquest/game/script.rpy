@@ -147,12 +147,47 @@ Tools: backups, redundancy, protection against DDoS attacks.
     t "Don't forget, no system is ever 100% secure. Your job isn't to eliminate risk. It's to MANAGE it wisely."
 
     hide t
+    
+
+    jump intro_test
+    
+
+
+
+
+label intro_test:
     #[Notebook closes. Back to MC.]
+
     scene bg room
 
     show mc
 
     mc "Threat, vulnerability, impact... mitigate, transfer, avoid, accept... Confidentiality, Integrity, Availability... You know what, I feel like I'm ready for the big test tomorrow!"
+    
+    #[next day, exam room, bg noise of talking]
+
+    scene bg classroom
+
+    t "Settle down, settle down!"
+
+    "I know every student has worked their butts off to make it big in the world."
+    "And today will be proof of that work."
+    "Those who pass this test will be able to do great things in this world."
+    "I expect big things from each and every one of you."
+    "Specifically, from whoever passes the test, of course!"
+    "Now, begin! "
+
+    #[MCQ test on CIA and RISK]
+
+label genie_intro:
+
+    scene bg outside
+
+    mc "Yes! I did it! I actually passed. I can't beli-"
+
+    scene bg black
+
+    #[The CyberGenie spawns in, TIME IS FROZEN, magic sounds ensue]
 
 
 
