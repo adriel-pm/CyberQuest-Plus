@@ -1,0 +1,29 @@
+# ===== Ren'Py generated files =====
+# Rebuilt automatically every launch. Committing them causes fake
+# "changes" and stale-code bugs across machines.
+**/game/cache/
+*.rpyc
+*.rpymc
+*.rpyb
+
+# Personal save files - each teammate has their own
+**/game/saves/
+
+# Ren'Py logs and debug output
+log.txt
+traceback.txt
+errors.txt
+files.txt
+tmp/
+
+# Built game packages
+dist/
+
+# ===== macOS junk =====
+.DS_Store
+.AppleDouble
+._*
+
+# ===== Editor =====
+.vscode/
+*.swp
