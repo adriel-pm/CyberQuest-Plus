@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define mc = Character("Prem", color="#3a54d4")
+define mc = Character("MC", color="#3a54d4")
 define g = Character("Genie", color="#8c3ad4")
 define t = Character("Teach", color="#3ad44c")
 
