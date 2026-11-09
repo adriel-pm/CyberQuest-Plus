@@ -21,7 +21,7 @@
 ##   Nothing in the story files has to change.
 ##
 ## The names below match what script.rpy already uses: the sprites are
-## "mc", "t" and "g" (not "prem"/"teach"/"genie"), so the existing
+## "mc", "t" and "g" (not "MC"/"teach"/"genie"), so the existing
 ## `show mc` and `show t` lines keep working untouched.
 ## =====================================================================
 
@@ -53,11 +53,11 @@ init -1 python:
 image bg black = Solid("#000000")
 
 image bg classroom    = cq_bg_placeholder("ART NEEDED: bg classroom\nCyberState University classroom with a whiteboard.", "#264653")
-image bg mc_bedroom   = cq_bg_placeholder("ART NEEDED: bg mc_bedroom\nPrem's bedroom, morning. Upstate New York outside.", "#3d405b")
-image bg mc_workplace = cq_bg_placeholder("ART NEEDED: bg mc_workplace\nPrem's desk at a boring office job, 6 months later.", "#5c4d7d")
+image bg mc_bedroom   = cq_bg_placeholder("ART NEEDED: bg mc_bedroom\nMC's bedroom, morning. Upstate New York outside.", "#3d405b")
+image bg mc_workplace = cq_bg_placeholder("ART NEEDED: bg mc_workplace\nMC's desk at a boring office job, 6 months later.", "#5c4d7d")
 image bg mnb_office   = cq_bg_placeholder("ART NEEDED: bg mnb_office\nMice'N'Boards (computer hardware company) office.", "#2a6f97")
-image bg sunset       = cq_bg_placeholder("ART NEEDED: bg sunset\nPrem walking out the door into the sunset.", "#e76f51")
-image bg mc_home      = cq_bg_placeholder("ART NEEDED: bg mc_home\nPrem's home, evening.", "#3a3a3a")
+image bg sunset       = cq_bg_placeholder("ART NEEDED: bg sunset\nMC walking out the door into the sunset.", "#e76f51")
+image bg mc_home      = cq_bg_placeholder("ART NEEDED: bg mc_home\nMC's home, evening.", "#3a3a3a")
 
 
 ## ---------------------------------------------------------------------
@@ -66,7 +66,7 @@ image bg mc_home      = cq_bg_placeholder("ART NEEDED: bg mc_home\nPrem's home, 
 ## Expressions can be added later as separate files, e.g.
 ## "t happy.png" and "t annoyed.png", then written as:  show t happy
 ## ---------------------------------------------------------------------
-image mc      = cq_sprite_placeholder("ART NEEDED:\nmc\n(Prem)", "#3a54d4")
+image mc      = cq_sprite_placeholder("ART NEEDED:\nmc\n(MC)", "#3a54d4")
 image t       = cq_sprite_placeholder("ART NEEDED:\nt\n(Teach, holding a mug:\n\"World's Okayest\nProfessor\")", "#3ad44c")
 image g       = cq_sprite_placeholder("ART NEEDED:\ng\n(CyberGenie)", "#8c3ad4")
 image student = cq_sprite_placeholder("ART NEEDED:\nstudent\n(hand raised)", "#8d99ae")

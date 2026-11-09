@@ -105,7 +105,7 @@ default cq_q = None
 ## =====================================================================
 label cq_prologue_part2:
 
-    # Teach and Prem are already on screen from script.rpy, and the
+    # Teach and MC are already on screen from script.rpy, and the
     # background is already "bg classroom", so this picks up mid-scene.
 
     # --- History timeline on the whiteboard ---
@@ -131,7 +131,7 @@ label cq_prologue_part2:
     t "No, it's not that CIA. Nobody here is getting sunglasses and a black van. Yet."
 
     # DIRECTION: A student raises a hand.
-    # Prem is at right, so the student stands further left.
+    # MC is at right, so the student stands further left.
     show student at Position(xalign=0.72) with dissolve
     student "Is it related to the movies?"
     t "Only the ones where somebody types really fast and says \"I'm in.\""
@@ -185,7 +185,7 @@ label cq_prologue_part2:
 
     hide screen cq_whiteboard
 
-    # DIRECTION: Notebook closes. Back to Prem.
+    # DIRECTION: Notebook closes. Back to MC.
     # ART: bg mc_bedroom
     scene bg mc_bedroom with dissolve
     show mc at center with dissolve
@@ -217,7 +217,7 @@ label cq_prologue_part2:
     call cq_bar_exam
 
     # {nw} means "no wait": the line shows and the game moves on by
-    # itself, so the Genie literally interrupts Prem mid-word.
+    # itself, so the Genie literally interrupts MC mid-word.
     mc "Yes! I did it! I actually passed. I can't beli{nw}"
 
     # -----------------------------------------------------------------

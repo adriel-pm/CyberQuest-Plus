@@ -4,7 +4,7 @@
 ## The main three characters are already defined at the top of
 ## script.rpy, so they are NOT repeated here:
 ##
-##     mc  -> "Prem"    (blue)
+##     mc  -> "MC"    (blue)
 ##     g   -> "Genie"   (purple)
 ##     t   -> "Teach"   (green)
 ##
@@ -18,7 +18,7 @@
 # The student who raises a hand during Teach's CIA lesson.
 define student = Character("Student", color="#b8b8b8")
 
-# Prem's boss at the office job, 6 months after graduation.
+# MC's boss at the office job, 6 months after graduation.
 define boss = Character("Boss", color="#e63946")
 
 # WRITERS: the Mice'N'Boards employee who calls for help in Scenario 1.

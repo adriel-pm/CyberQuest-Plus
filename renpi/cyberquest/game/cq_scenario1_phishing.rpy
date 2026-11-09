@@ -19,13 +19,13 @@
 default cq_clues_found = []      # which email clues were clicked
 default cq_clue = None           # the clue clicked most recently
 default cq_answered = False      # used to repeat a question until it's right
-default cq_risk_explained = []   # which risk responses Prem has explained
+default cq_risk_explained = []   # which risk responses MC has explained
 
 
 label cq_scenario1_phishing:
 
     # -----------------------------------------------------------------
-    # SCENE 1: Six months later, Prem's boring job
+    # SCENE 1: Six months later, MC's boring job
     # -----------------------------------------------------------------
     scene black with fade
     centered "FLASH FORWARD: 6 MONTHS LATER"
@@ -40,7 +40,7 @@ label cq_scenario1_phishing:
     hide boss with dissolve
 
     # WRITERS: "6 months later" vs "working here for 4 months" is not a
-    # bug; Prem could have found the job 2 months after graduating. Confirm.
+    # bug; MC could have found the job 2 months after graduating. Confirm.
     mc "I've been working here for 4 months and NOTHING has happened."
     mc "I'm starting to think that CyberGenie was just some STRANGE dream."
     mc "Ugh, back to playing my LinkedIn game."
@@ -115,9 +115,9 @@ label cq_scenario1_phishing:
 
     # =================================================================
     # MINIGAME 1: INVESTIGATE THE EMAIL
-    # DIRECTION: Time stays frozen. Prem sits down at the computer, takes a
+    # DIRECTION: Time stays frozen. MC sits down at the computer, takes a
     #            huge magnifying glass and looks at the email.
-    # ART: optional close-up of Prem with the magnifying glass here.
+    # ART: optional close-up of MC with the magnifying glass here.
     #
     # The loop repeats until all 3 clues have been clicked:
     #   1. call screen -> player clicks a clue -> _return = "sender"/"title"/"link"
@@ -174,7 +174,7 @@ label cq_scenario1_phishing:
 
     # =================================================================
     # MINIGAME 2: BACK IN TIME, STOP THE CLICK
-    # DIRECTION: A flash of light; Prem is back BEFORE the caller clicked.
+    # DIRECTION: A flash of light; MC is back BEFORE the caller clicked.
     # `scene` clears everything, including the time-freeze tint and the
     # Genie, so time is running normally again.
     # =================================================================
@@ -234,7 +234,7 @@ label cq_scenario1_phishing:
     caller "Wow, thank you so much! I could have been toast!"
     mc "No problem... Just part of the job."
 
-    # DIRECTION: Prem starts to walk out the door, but CyberGenie appears in front of him.
+    # DIRECTION: MC starts to walk out the door, but CyberGenie appears in front of him.
     # AUDIO: play sound sfx_magic
     show g at right with cq_flash
 
@@ -251,7 +251,7 @@ label cq_scenario1_phishing:
     # only shows if it hasn't been picked yet, so the menu shrinks each
     # time until all 4 have been explained.
     # =================================================================
-    # DIRECTION: Prem turns around.
+    # DIRECTION: MC turns around.
     mc "Caller! Do you know how to deal with this in the future?"
     caller "Can this happen again?"
     mc "Why yes, it can, and there are four ways to help protect yourself."
@@ -283,7 +283,7 @@ label cq_scenario1_phishing:
 
     # -----------------------------------------------------------------
     # ENDING
-    # DIRECTION: Prem walks out of the door and into the sunset, realizing
+    # DIRECTION: MC walks out of the door and into the sunset, realizing
     #            he has finished the job.
     # -----------------------------------------------------------------
     # ART: bg sunset
