@@ -181,7 +181,7 @@ label cq_prologue_part2:
     t "2. TRANSFER: Share the burden. Buy cyber insurance."
     t "3. AVOID: Stop doing the risky thing. Don't plug in mystery USB sticks from the parking lot."
     t "4. ACCEPT: Live with it, knowingly. The risk is small, and the fix costs more than the problem."
-    t "No system is ever 100% secure. Your job isn't to eliminate risk. It's to MANAGE it wisely."
+    t "No system is ever 100\% secure. Your job isn't to eliminate risk. It's to MANAGE it wisely."
 
     hide screen cq_whiteboard
 

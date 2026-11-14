@@ -236,7 +236,8 @@ label cq_scenario1_phishing:
 
     # DIRECTION: MC starts to walk out the door, but CyberGenie appears in front of him.
     # AUDIO: play sound sfx_magic
-    show g at right with cq_flash
+    show timefreeze_overlay zorder 50 with cq_flash
+    show g at right zorder 60 with cq_flash
 
     g "Not so fast kid! You have only postponed the issue, not fixed it!"
     mc "Really? What do I need to do?"
@@ -244,6 +245,7 @@ label cq_scenario1_phishing:
     mc "Makes sense, I need to help him!"
 
     hide g with dissolve
+    hide timefreeze_overlay with dissolve
 
     # =================================================================
     # MINIGAME 3: TEACH PREVENTION (the 4 risk responses, any order)

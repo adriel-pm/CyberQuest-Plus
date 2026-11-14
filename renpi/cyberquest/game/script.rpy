@@ -34,7 +34,10 @@ label start:
 
     "Tomorrow, I could graduate from CyberState University!"
 
+    scene bg mc_bedroom
     show mc at center
+
+    
 
     mc "But, darn. I need to make sure I pass that CyberState Bar Exam! I can't afford to fail it!"
 
