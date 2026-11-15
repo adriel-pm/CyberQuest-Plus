@@ -223,13 +223,14 @@ label cq_prologue_part2:
     # -----------------------------------------------------------------
     # CYBERGENIE APPEARS, TIME IS FROZEN
     # -----------------------------------------------------------------
-    # AUDIO: play sound sfx_magic        (DIRECTION: Sounds of magic)
+    play sound sfx_magic volume 0.35     #(DIRECTION: Sounds of magic)
     # AUDIO: play music bgm_genie fadein 1.0
     #
     # zorder decides stacking: the blue tint (50) covers the classroom
     # and Teach, and the Genie (60) draws on top of the tint.
     show timefreeze_overlay zorder 50 with cq_flash
     show g at right zorder 60 with dissolve
+    
 
     mc "W-w-w-w...."
     mc "WHAT?"

@@ -50,7 +50,7 @@ label cq_scenario1_phishing:
     # DIRECTION: PHISHING: a fake IT security alert that tricks the
     #            employee into giving away their company login credential.
     # -----------------------------------------------------------------
-    # AUDIO: play sound sfx_phone_ring
+    play sound sfx_phone_ring
     "RIIING... RIIIIIIIIING" with hpunch
 
     mc "Woah, finally!"
@@ -235,7 +235,7 @@ label cq_scenario1_phishing:
     mc "No problem... Just part of the job."
 
     # DIRECTION: MC starts to walk out the door, but CyberGenie appears in front of him.
-    # AUDIO: play sound sfx_magic
+    play sound sfx_magic volume 0.35
     show timefreeze_overlay zorder 50 with cq_flash
     show g at right zorder 60 with cq_flash
 
@@ -302,7 +302,7 @@ label cq_scenario1_phishing:
     mc "No other reason for me to go back in ti{nw}"
 
     # DIRECTION: CYBERGENIE ARRIVES
-    # AUDIO: play sound sfx_magic
+    play sound sfx_magic volume 0.35
     show g at right with cq_flash
 
     g "IT IS I."
