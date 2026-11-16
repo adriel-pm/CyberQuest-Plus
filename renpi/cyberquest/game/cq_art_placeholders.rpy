@@ -56,7 +56,7 @@ image bg classroom    = "/images/classbg.png"
 image bg mc_bedroom   = "/images/roombg.png" 
 image bg mc_workplace = "/images/officebg.jpg" 
 image bg mnb_office   = "/images/clientofficebg.jpg"
-image bg sunset       = "/images/sunsetbg.png"
+image bg sunset       = "/images/trainbg.png"
 image bg mc_home      = "/images/mc_night_home.jpg"
 
 ## ---------------------------------------------------------------------
