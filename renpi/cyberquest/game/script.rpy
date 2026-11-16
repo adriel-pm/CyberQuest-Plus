@@ -21,6 +21,8 @@ label start:
 
     scene bg black
 
+    # Play first track CyberQ2.mp3
+    play music bgm_morning fadeout 1.0 fadein 1.0
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "mc happy.png" to the images
     # directory.
