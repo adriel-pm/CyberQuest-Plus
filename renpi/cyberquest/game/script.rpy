@@ -69,6 +69,10 @@ label start:
 
     mc "Let me just check my notes really quickly…"
 
+    $ notebook_unlocked = True
+    show screen notebook_notify("Can now use notebook")
+    
+
     t "Alright, class. Quick history first, because every good hero knows the story of the villains."
 
     # ------------------------------------------------------------------

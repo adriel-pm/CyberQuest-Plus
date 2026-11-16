@@ -159,6 +159,9 @@ label cq_prologue_part2:
 
     hide screen cq_notebook_cia with dissolve
 
+    $ write_note(CQ_CIA_NOTES)
+    show screen notebook_notify("Notes updated")
+
     # DIRECTION: Teach writes "C + I + A = a balancing act."
     show screen cq_whiteboard("C + I + A = a balancing act.")
 
@@ -184,6 +187,9 @@ label cq_prologue_part2:
     t "No system is ever 100\% secure. Your job isn't to eliminate risk. It's to MANAGE it wisely."
 
     hide screen cq_whiteboard
+
+    $ write_note(CQ_RISK_RESPONSE_LINES)
+    show screen notebook_notify("Notes updated")
 
     # DIRECTION: Notebook closes. Back to MC.
     # ART: bg mc_bedroom
