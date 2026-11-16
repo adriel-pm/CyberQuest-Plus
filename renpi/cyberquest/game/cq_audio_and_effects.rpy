@@ -22,12 +22,13 @@ define cq_flash = Fade(0.1, 0.0, 0.5, color="#ffffff")
 ## ---------------------------------------------------------------------
 ## MUSIC (loops)
 ## ---------------------------------------------------------------------
-define audio.bgm_morning    = "audio/music/bgm_morning.ogg"     # Prem's bedroom
-define audio.bgm_classroom  = "audio/music/bgm_classroom.ogg"   # Teach's review class
-define audio.bgm_genie      = "audio/music/bgm_genie.ogg"       # CyberGenie / frozen time
-define audio.bgm_office     = "audio/music/bgm_office.ogg"      # Prem's workplace, Mice'N'Boards
-define audio.bgm_rules_jazz = "audio/music/bgm_rules_jazz.ogg"  # "RULES JAZZ MUSIC PLAYS"
-define audio.bgm_ending     = "audio/music/bgm_ending.ogg"      # sunset / home
+define audio.bgm_morning    = "audio/music/CyberQ2.mp3"     # Prem's bedroom
+define audio.bgm_classroom  = "audio/music/CyberQ2.mp3"     # Teach's review class
+define audio.bgm_genie      = "audio/music/Aliens.mp3"      # CyberGenie / frozen time
+define audio.bgm_office     = "audio/music/CyberQ3.mp3"     # Prem's workplace, Mice'N'Boards
+define audio.bgm_rules_jazz = "audio/music/CyberQ3.mp3"     # "RULES JAZZ MUSIC PLAYS"
+define audio.bgm_ending     = "audio/music/bgm_menu.mp3"    # sunset / home
+define audio.bgm_stress     = "audio/music/CyberQ1.mp3"     # bar exam / high-tension scenes
 
 ## ---------------------------------------------------------------------
 ## SOUND EFFECTS (play once)

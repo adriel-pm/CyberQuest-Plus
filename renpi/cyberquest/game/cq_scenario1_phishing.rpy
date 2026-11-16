@@ -32,6 +32,9 @@ label cq_scenario1_phishing:
 
     # ART: bg mc_workplace
     # AUDIO: play music bgm_office fadein 1.0
+
+    play music bgm_office fadeout 1.0 fadein 1.0
+
     # AUDIO: play sound sfx_office   (Sounds of work and business)
     scene bg mc_workplace with fade
 
@@ -50,7 +53,7 @@ label cq_scenario1_phishing:
     # DIRECTION: PHISHING: a fake IT security alert that tricks the
     #            employee into giving away their company login credential.
     # -----------------------------------------------------------------
-    # AUDIO: play sound sfx_phone_ring
+    play sound sfx_phone_ring
     "RIIING... RIIIIIIIIING" with hpunch
 
     mc "Woah, finally!"
@@ -84,6 +87,10 @@ label cq_scenario1_phishing:
     # -----------------------------------------------------------------
     hide screen cq_phishing_email
     # AUDIO: play sound sfx_time_freeze
+    play sound sfx_time_freeze
+
+    play music bgm_genie fadeout 1.0 fadein 1.0
+
     show timefreeze_overlay zorder 50 with cq_flash
     show g at right zorder 60 with dissolve
 
@@ -111,6 +118,9 @@ label cq_scenario1_phishing:
     g "Now go save the world!"
 
     # AUDIO: stop music fadeout 1.0
+
+    play music bgm_office fadeout 1.0 fadein 1.0
+
     hide g with dissolve
 
     # =================================================================
@@ -130,6 +140,7 @@ label cq_scenario1_phishing:
         call screen cq_phishing_email(interactive=True, found=cq_clues_found)
         $ cq_clue = _return
         # AUDIO: play sound sfx_click
+        play sound sfx_click
 
         if cq_clue not in cq_clues_found:
             $ cq_clues_found.append(cq_clue)
@@ -235,7 +246,7 @@ label cq_scenario1_phishing:
     mc "No problem... Just part of the job."
 
     # DIRECTION: MC starts to walk out the door, but CyberGenie appears in front of him.
-    # AUDIO: play sound sfx_magic
+    play sound sfx_magic volume 0.35
     show timefreeze_overlay zorder 50 with cq_flash
     show g at right zorder 60 with cq_flash
 
@@ -290,6 +301,9 @@ label cq_scenario1_phishing:
     # -----------------------------------------------------------------
     # ART: bg sunset
     # AUDIO: play music bgm_ending fadein 2.0
+
+    play music bgm_ending fadeout 2.0 fadein 2.0
+
     scene bg sunset with dissolve
     pause 2.0
 
@@ -302,7 +316,7 @@ label cq_scenario1_phishing:
     mc "No other reason for me to go back in ti{nw}"
 
     # DIRECTION: CYBERGENIE ARRIVES
-    # AUDIO: play sound sfx_magic
+    play sound sfx_magic volume 0.35
     show g at right with cq_flash
 
     g "IT IS I."
@@ -318,6 +332,8 @@ label cq_scenario1_phishing:
 
     # DIRECTION: We hear a laugh track as the game ends.
     # AUDIO: play sound sfx_laugh_track
+    play sound sfx_laugh_track
+
     pause 2.0
 
     # WRITERS: the script marks this ending as "proof of concept". When

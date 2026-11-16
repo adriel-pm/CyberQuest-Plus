@@ -21,6 +21,8 @@ label start:
 
     scene bg black
 
+    # Play first track CyberQ2.mp3
+    play music bgm_morning fadeout 1.0 fadein 1.0
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "mc happy.png" to the images
     # directory.
@@ -68,6 +70,10 @@ label start:
     mc "I can hardly wait to get outta here!"
 
     mc "Let me just check my notes really quickly…"
+
+    $ notebook_unlocked = True
+    show screen notebook_notify("Can now use notebook")
+    
 
     t "Alright, class. Quick history first, because every good hero knows the story of the villains."
 

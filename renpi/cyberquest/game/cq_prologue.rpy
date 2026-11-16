@@ -159,6 +159,9 @@ label cq_prologue_part2:
 
     hide screen cq_notebook_cia with dissolve
 
+    $ write_note(CQ_CIA_NOTES)
+    show screen notebook_notify("Notes updated")
+
     # DIRECTION: Teach writes "C + I + A = a balancing act."
     show screen cq_whiteboard("C + I + A = a balancing act.")
 
@@ -185,6 +188,9 @@ label cq_prologue_part2:
 
     hide screen cq_whiteboard
 
+    $ write_note(CQ_RISK_RESPONSE_LINES)
+    show screen notebook_notify("Notes updated")
+
     # DIRECTION: Notebook closes. Back to MC.
     # ART: bg mc_bedroom
     scene bg mc_bedroom with dissolve
@@ -202,6 +208,8 @@ label cq_prologue_part2:
     # ART: bg classroom reused for exam day (a separate "bg exam_room"
     #      is optional if art wants one).
     # AUDIO: play sound sfx_crowd   (DIRECTION: Everyone is talking)
+    play sound sfx_crowd 
+
     scene bg classroom with fade
     show t at left with dissolve
 
@@ -213,8 +221,12 @@ label cq_prologue_part2:
     t "Specifically, from whoever passes the test, of course!"
     t "Now, begin!"
 
+    play music bgm_stress fadeout 1.0 fadein 1.0 # CyberQ1 starts
+
     # The story only continues once the player passes.
     call cq_bar_exam
+
+    stop music fadeout 1.0 # CyberQ1 ends
 
     # {nw} means "no wait": the line shows and the game moves on by
     # itself, so the Genie literally interrupts MC mid-word.
@@ -223,13 +235,16 @@ label cq_prologue_part2:
     # -----------------------------------------------------------------
     # CYBERGENIE APPEARS, TIME IS FROZEN
     # -----------------------------------------------------------------
-    # AUDIO: play sound sfx_magic        (DIRECTION: Sounds of magic)
+    play sound sfx_magic volume 0.35     #(DIRECTION: Sounds of magic)
     # AUDIO: play music bgm_genie fadein 1.0
-    #
+
+    play music bgm_genie fadeout 1.0 fadein 1.0
+
     # zorder decides stacking: the blue tint (50) covers the classroom
     # and Teach, and the Genie (60) draws on top of the tint.
     show timefreeze_overlay zorder 50 with cq_flash
     show g at right zorder 60 with dissolve
+    
 
     mc "W-w-w-w...."
     mc "WHAT?"
@@ -256,6 +271,9 @@ label cq_prologue_part2:
 
     # DIRECTION: He vanishes.
     # AUDIO: stop music fadeout 1.0
+
+    stop music fadeout 1.0
+
     hide g with cq_flash
     hide timefreeze_overlay with dissolve
 
